@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
+<title>電卓</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="display">0</div>
+    <table>
+      <tr>
+        <td><button type="button" value="7" onclick="inputNum(this)">7</button></td>
+        <td><button type="button" value="8" onclick="inputNum(this)">8</button></td>
+        <td><button type="button" value="9" onclick="inputNum(this)">9</button></td> 
+        <td><button type="button" value="+" onclick="inputOperator(this)">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="button" value="4" onclick="inputNum(this)">4</button></td>
+        <td><button type="button" value="5" onclick="inputNum(this)">5</button></td>
+        <td><button type="button" value="6" onclick="inputNum(this)">6</button></td> 
+        <td><button type="button" value="-" onclick="inputOperator(this)">-</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="button" value="1" onclick="inputNum(this)">1</button></td>
+        <td><button type="button" value="2" onclick="inputNum(this)">2</button></td>
+        <td><button type="button" value="3" onclick="inputNum(this)">3</button></td> 
+        <td><button type="button" value="*" onclick="inputOperator(this)">*</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="button" value="0" onclick="inputNum(this)">0</button></td>
+        <td><button type="button" value="00" onclick="inputNum(this)">00</button></td>
+        <td><button type="button" value="." onclick="inputOperator(this)">.</button></td> 
+        <td><button type="button" value="/" onclick="inputOperator(this)">/</button></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><button type="button" value="AC" onclick="inputAc(this)">AC</button></td> 
+        <td colspan="2"><button type="button" value="=" onclick="inputEqual(this)">=</button></td> 
+      </tr>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
